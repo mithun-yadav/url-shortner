@@ -3,17 +3,24 @@
   "version": "1.0.0",
   "description": "url shortner project using express",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "dev": "node --watch index.js",
-    "start": "node index.js"
+    "start": "node index.js",
+    "db:push": "drizzle-kit push",
+    "db:studio": "drizzle-kit studio"
   },
   "devDependencies": {
     "@types/express": "^5.0.6",
-    "@types/node": "^25.2.0"
+    "@types/node": "^25.2.0",
+    "drizzle-kit": "^0.31.8"
   },
   "dependencies": {
+    "@types/pg": "^8.16.0",
     "dotenv": "^17.2.3",
-    "express": "^5.2.1"
+    "drizzle-orm": "^0.45.1",
+    "express": "^5.2.1",
+    "postgres": "^3.4.8"
   },
   "keywords": [],
   "author": "",
